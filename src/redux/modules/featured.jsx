@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 // Action
 export const fetchFeatured = createAsyncThunk("fetchFeatured", async () => {
   const response = await fetch(
-    "https://api.theguidon.com/interactive/wp-json/api/v1/featured"
+    "https://api-interactive.theguidon.com/wp-json/api/v1/featured",
   );
   return response.json();
 });
